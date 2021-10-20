@@ -1,5 +1,5 @@
 #-----------------------------------------------------------
-# Main configuration file | rlevchenko.com
+# Main configuration file | 
 #-----------------------------------------------------------
 
 #Random string for resources naming
@@ -359,4 +359,4 @@ resource "azurerm_eventgrid_domain" "rlmvp-svc-eventgrid" {
 }
 
 #-----------------------------------------------------------
-# Roman Levchenko | rlevchenko.com
+#  

@@ -1,5 +1,5 @@
 #-----------------------------------------------------------
-# Provider Authentication | rlevchenko.com
+# Provider Authentication | 
 #----------------------------------------------------------
 
 variable "client_secret" {} # Variable to store SP's password
@@ -25,4 +25,4 @@ provider "azurerm" {
   features {}
 }
 #-----------------------------------------------------------
-# Roman Levchenko | rlevchenko.com
+ 

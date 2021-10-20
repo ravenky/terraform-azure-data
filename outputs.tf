@@ -24,4 +24,4 @@ output "event_grid_endpoint" {
 }
 
 #-----------------------------------------------------------
-# Roman Levchenko | rlevchenko.com
+

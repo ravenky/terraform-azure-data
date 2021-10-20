@@ -9,12 +9,12 @@ tenant_id = "d373cb1xxxx" # Tenant ID
 
 # Azure region
 
-az_region = "West Europe"
+az_region = "eastus"
 
 # Azure tags
 
 az_tags = {
-  environment = "rlevchenko"
+  environment = "dev"
 }
 
 # Naming convention
@@ -26,23 +26,23 @@ suffix = "mvp"
 #--------------------------------------------------------------
 # What should be deployed?
 #--------------------------------------------------------------
-servicebus       = true  # Azure Service Bus
+servicebus       = false  # Azure Service Bus
 datafactory      = true  # Azure Data Factory
 datafactory_git  = false # Enable GIT for Data Factory? (don't forget to set Git settings in the Data Factory section)
-databricks       = true  # Azure DataBricks
-eventhub         = true  # Azure EventHub
-functions        = true  # Azure Functions 
-functions_appins = true  # Integrate App.Insights with Azure Functions?
-eventgrid        = true  # Azure EventGrid
-kusto            = true  # Azure Data Explorer (kusto)
-analysis         = true  # Azure Analysis Server
-sqlserver        = true  # Azure SQL Server 
-sqlep            = true  # Azure SQL Elastic Pool
-sqldb            = true  # Azure SQL Database
+databricks       = false  # Azure DataBricks
+eventhub         = false  # Azure EventHub
+functions        = false  # Azure Functions 
+functions_appins = false  # Integrate App.Insights with Azure Functions?
+eventgrid        = false  # Azure EventGrid
+kusto            = false  # Azure Data Explorer (kusto)
+analysis         = false  # Azure Analysis Server
+sqlserver        = false  # Azure SQL Server 
+sqlep            = false  # Azure SQL Elastic Pool
+sqldb            = false  # Azure SQL Database
 
 
 #--------------------------------------------------------------
-# Service Bus settings | rlevchenko.com
+# Service Bus settings | 
 #--------------------------------------------------------------
 
 
@@ -75,7 +75,7 @@ az_sb_sub_deadlettering = false
 az_sb_sub_sessions      = false # Enable Sessions?
 
 #--------------------------------------------------------------
-# Data Lake Storage settings | rlevchenko.com
+# Data Lake Storage settings | 
 #--------------------------------------------------------------
 
 az_stor_acc_tier  = "Standard"  # Standard or Premium
@@ -85,7 +85,7 @@ az_stor_tier      = "Hot"       # Tier (Cold/Hot/Archive)
 az_stor_secure    = true        # Secured Storage or not? (HTTPS only)
 
 #--------------------------------------------------------------
-# Data Factory settings | rlevchenko.com
+# Data Factory settings | 
 #--------------------------------------------------------------
 
 git_account  = "value here" # optional (if "Enable Git" required)
@@ -98,7 +98,7 @@ git_folder   = "value here" # optional (if "Enable Git" required)
 az_spark_sku = "standard" # "standard/premium"
 
 #--------------------------------------------------------------
-# Event Hubs settings | rlevchenko.com
+# Event Hubs settings | 
 #--------------------------------------------------------------
 
 az_hubns_sku      = "Standard" # Event Hubs SKU (Basic/Standard)
@@ -110,7 +110,7 @@ az_hub_retention  = "1"        # Event Hub Message Retention
 az_hub_capture    = "false"    # Enable capture to Azure storage?
 
 #--------------------------------------------------------------
-# Function App settings | rlevchenko.com
+# Function App settings | 
 #--------------------------------------------------------------
 
 az_appsvc_sku        = "Dynamic"  # AppService Plan SKU
@@ -122,30 +122,30 @@ az_stor_funcapp_tier = "Standard" # Storage account settings
 az_stor_funcapp_repl = "LRS"      # Storage replication type
 
 #--------------------------------------------------------------
-# Data Explorer (kusto) settings | rlevchenko.com
+# Data Explorer (kusto) settings | 
 #--------------------------------------------------------------
 az_kusto_sku   = "Standard_D11_v2" # Compute SKUs
 az_kusto_nodes = "2"               # Capacity (node counts)
 
 #--------------------------------------------------------------
-# Analysis Server settings | rlevchenko.com
+# Analysis Server settings | 
 #--------------------------------------------------------------
 az_stor_ansrv_tier = "Standard"          # Storage Account settings
 az_stor_ansrv_repl = "LRS"               # Replication Type
 az_ansrv_sku       = "S0"                # Analysis Server SKU
-az_ansrv_users     = ["inbox@rlevchenko.com"] # List of emails/UPNs of admin users
+az_ansrv_users     = ["inbox@"] # List of emails/UPNs of admin users
 az_ansrv_powerbi   = "true"              # Whether PowerBi be allowed to access or not
 az_stor_ssa_start  = "2021-06-07"        # Start date of the SSA token (used for BackUp storage)
 az_stor_ssa_end    = "2021-09-10"        # Expiration date of the SSA token (used for BackStorage)
 
 #--------------------------------------------------------------
-# Event Grid settings | rlevchenko.com
+# Event Grid settings | 
 #--------------------------------------------------------------
 
 az_eventgrid_schema = "EventGridSchema" # EventGridSchema or CloudEventV01Schema or CustomEventSchema
 
 #--------------------------------------------------------------
-# SQL Server settings | rlevchenko.com
+# SQL Server settings | 
 #--------------------------------------------------------------
 
 az_sqlserver_name = "rlsqlsrv01" # SQL Server Name (optional: random used)
@@ -169,4 +169,4 @@ az_sql_db_sku_name = "ElasticPool" # SQL DB SKU Name
 az_sql_db_maxsize = "5" # SQL DB Max Size in GB
 
 #-----------------------------------------------------------
-# Roman Levchenko | rlevchenko.com
+

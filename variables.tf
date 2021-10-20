@@ -437,4 +437,4 @@ variable "az_sql_db_sku_name" {
 
 
 #-----------------------------------------------------------
-# Roman Levchenko | rlevchenko.com
+
