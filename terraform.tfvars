@@ -3,9 +3,9 @@
 #--------------------------------------------------------------
 
 # Azure principal
-client_id = "36070b6xxxx" # Application ID
-subscr_id = "997f972xxxx" # Subscription ID
-tenant_id = "d373cb1xxxx" # Tenant ID
+client_id = "14ddd0b4-34ed-48af-94ab-21344de879e6" # Application ID
+subscr_id = "a35d9f2d-d0a2-4090-8626-1706cb8c09a4" # Subscription ID
+tenant_id = "e5c7350a-b7cc-4cee-abc9-fd18634db69e" # Tenant ID
 
 # Azure region
 
